@@ -1,0 +1,21 @@
+28-07-2026 (Assignment 1)
+
+1. Print "DSA" 5 times
+2. Playing with for loop
+3. Pattern display
+4. Pattern display
+
+04-08-2026 (Assignment 2)
+
+1. Factorial Iterative + Recursive
+2. Data Structure Identifier
+3. Accessing and Traversing 1D and 2D array
+
+11-08-2026 (Assignment 3)
+
+Using functions only
+1. Insert an element in an array
+2. Delete an element from an array
+3. Linear search
+4. Binary search(Iterative)
+5. Binary search(Recursive)
