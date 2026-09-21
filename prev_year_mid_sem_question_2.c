@@ -1,3 +1,5 @@
+//Take 2 arrays, implement such a sorting where on array so that after each iteration smallest element goes to left, and on array 2 so that after each iteration the element goes to its correct position. Once the sorting is done on both the array combine them in sorted order to make a big array.
+
 #include<stdio.h>
 
 void swap(int *a, int *b){
