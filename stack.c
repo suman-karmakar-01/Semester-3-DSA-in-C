@@ -24,13 +24,23 @@ void pop(){
     else top--;
 }
 
+void peek(){
+    if(isEmpty()){
+        printf("Stack is empty!\n");
+        return;
+    }
+    printf("Peeked top of the stack and found : %d\n", stack[top]);
+}
+
 void display(){
     if(isEmpty()){
         printf("Stack is empty\n");
         return;
     }
-    for(int i=top; i>=0; i--) printf("%d\n", stack[i]);
-    printf("\n");
+    printf("|----|\n");
+    for(int i=top; i>=0; i--) printf("| %d |\n", stack[i]);
+    printf("|----|");
+    printf("\n\n");
 }
 
 int main(){
@@ -40,9 +50,12 @@ int main(){
     push(30);
     display();
     push(40);
+    peek();
     push(51);
+    peek();
     push(60);
     display();
+    peek();
     pop();
     display();
     pop();
