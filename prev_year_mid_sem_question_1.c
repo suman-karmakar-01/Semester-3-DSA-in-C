@@ -1,3 +1,5 @@
+//Take an array of 10 elements randomly unsorted, implement the sorting which checks two adjacent elements and swaps them if needed and perform this sorting for 1 external loops iteration, then take that intermediate array and pass it to a sorting function which performs worst when the array is sorted
+
 #include<stdio.h>
 
 void swap(int *a, int *b){
