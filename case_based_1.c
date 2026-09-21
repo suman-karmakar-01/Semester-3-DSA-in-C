@@ -1,3 +1,5 @@
+//Take an array of 9 elements, try searching 1 element if its present right in the middle, return the index and then sort the left side array in decending order using the sorting that will work as the worst case scenario. And sort the right side using that algorithm which will work the best in descending. If it is not found in the middle, insert that element in the middle and then sort it in asc which will work best for this case.
+
 #include<stdio.h>
 #include<stdlib.h>
 
