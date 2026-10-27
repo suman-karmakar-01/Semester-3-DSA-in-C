@@ -11,6 +11,7 @@ int count = 0;
 
 void insertBeginning(int data){
     struct ListNode* temp = malloc(sizeof(struct ListNode));
+    if(temp == NULL) return;
     temp->data = data;
     temp->next = head;
     count++;
@@ -19,19 +20,25 @@ void insertBeginning(int data){
 
 void insertEnd(int data){
     struct ListNode* temp1 = malloc(sizeof(struct ListNode));
-    struct ListNode* temp2 = head;
+    if(temp1 == NULL) return;
     temp1->data = data;
+    temp1->next = NULL;
+    if(head == NULL){
+        head = temp1;
+        count++;
+        return;
+    }
+    struct ListNode* temp2 = head;
     while(temp2->next!=NULL){
         temp2=temp2->next;
     }
     temp2->next = temp1;
-    temp1->next = NULL;
     count++;
 }
 
 void insert(int x, int data){
-    if(x < 1 || x>(count+1)){
-        printf("Invlaid position!\n");
+    if(x < 1 || x > (count+1)){
+        printf("Invalid position!\n");
         return;
     }
     if(x==1){
@@ -43,6 +50,7 @@ void insert(int x, int data){
         return;
     }
     struct ListNode* temp1 = malloc(sizeof(struct ListNode));
+    if(temp1 == NULL) return;
     struct ListNode* temp2 = head;
     temp1->data = data;
     for(int i=1; i<x-1; i++){
@@ -70,6 +78,7 @@ int main(){
     display();
     insertEnd(9);
     display();
-    insert(7,11);
+    insert(4,7);
+    insert(5,11);
     display();
 }
