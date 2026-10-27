@@ -12,17 +12,23 @@ int count = 0;
 void deleteBeginning(){
     struct ListNode* temp = head;
     if(head == NULL) return;
-    temp = head;
     head = head->next;
-    free(head);
+    free(temp);
     count--;
 }
 
 void deleteEnd(){
+    if(head == NULL) return;
     struct ListNode* temp1;
     struct ListNode* temp2 = head;
-    while(temp2->next!=NULL && temp2->next->next!=NULL){
-        temp2=temp2->next;
+    if(head->next == NULL){
+        free(head);
+        head = NULL;
+        count--;
+        return;
+    }
+    while(temp2->next->next != NULL){
+        temp2 = temp2->next;
     }
     temp1 = temp2->next;
     temp2->next = NULL;
@@ -35,28 +41,31 @@ void delete(int x){
         printf("Invalid position!\n");
         return;
     }
-    if(x==1){
+    if(x == 1){
         deleteBeginning();
         return;
     }
-    if(x==count){
+    if(x == count){
         deleteEnd();
         return;
     }
     struct ListNode* temp1;
     struct ListNode* temp2 = head;
-    for(int i=1; i<x-1; i++){
+
+    for(int i = 1; i < x-1; i++){
         temp2 = temp2->next;
     }
-    temp1 = temp2;
-    temp2->next = temp2->next->next;
+
+    temp1 = temp2->next;
+    temp2->next = temp1->next;
     free(temp1);
     count--;
 }
 
 void display(){
     struct ListNode* temp = head;
-    while(temp!=NULL){
+
+    while(temp != NULL){
         printf("%d ", temp->data);
         temp = temp->next;
     }
@@ -67,6 +76,7 @@ int main(){
     struct ListNode N[4] = {{2, &N[1]}, {3, &N[2]}, {10, &N[3]}, {5, NULL}};
     head = &N[0];
     count = 4;
+    display();
     deleteBeginning();
     display();
     deleteEnd();
