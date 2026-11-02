@@ -17,16 +17,16 @@ void deleteBeginning(){
 
 void deleteEnd(){
     if(head == NULL) return;
-    struct ListNode* temp2 = head;
+    struct ListNode* temp = head;
     if(head->next == NULL){
         head = NULL;
         count--;
         return;
     }
-    while(temp2->next->next != NULL){
-        temp2 = temp2->next;
+    while(temp->next->next != NULL){
+        temp = temp->next;
     }
-    temp2->next = NULL;
+    temp->next = NULL;
     count--;
 }
 
@@ -43,11 +43,11 @@ void delete(int x){
         deleteEnd();
         return;
     }
-    struct ListNode* temp2 = head;
+    struct ListNode* temp = head;
     for(int i = 1; i < x-1; i++){
-        temp2 = temp2->next;
+        temp = temp->next;
     }
-    temp2->next = temp2->next->next;
+    temp->next = temp->next->next;
     count--;
 }
 
