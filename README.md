@@ -9,7 +9,7 @@ It covers most of my lab activities, including **lab assignments, practicals, an
 The programs are organized into topic-wise folders:
 
 * **[Array/](Array/)** — 1D and 2D array traversal, address calculation (row and column major), insertion, deletion, accessing elements via pointers, and menu-driven operations
-* **[Linked List/](Linked%20List/)** — Singly, Circular, and Doubly Linked List implementation, traversal, insertion, deletion, and reversing
+* **[Linked List/](Linked%20List/)** — Singly, Circular, and Doubly Linked List implementation, traversal, insertion, deletion, reversing, and Spotify clone simulation (SLL, CLL, DCLL)
 * **[Searching/](Searching/)** — Linear Search (iterative and pointer-based) and Binary Search (iterative and recursive)
 * **[Sorting/](Sorting/)** — Bubble Sort, Modified Bubble Sort, Selection Sort, Modified Selection Sort, Insertion Sort, Merge Sort, and Quick Sort
 * **[Stack/](Stack/)** — Stack implementation and operations
@@ -51,6 +51,7 @@ So far, I have covered:
 * Recursion vs. Iteration — Factorial
 * Selection Sort
 * Singly Linked List — Implementation, Insertion, Deletion, Reversing
+* Spotify Clone — Interactive Playlist using SLL, CLL, and DCLL
 * Stack
 
 ## 🚀 What's Next?
