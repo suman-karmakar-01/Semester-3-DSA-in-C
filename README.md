@@ -9,11 +9,12 @@ It covers most of my lab activities, including **lab assignments, practicals, an
 The programs are organized into topic-wise folders:
 
 * **[Array/](Array/)** — 1D and 2D array traversal, address calculation (row and column major), insertion, deletion, accessing elements via pointers, and menu-driven operations
-* **[Linked List/](Linked%20List/)** — Singly, Circular, and Doubly Linked List implementation, traversal, insertion, deletion, reversing, and Spotify clone simulation (SLL, CLL, DCLL)
+* **[Linked List/](Linked%20List/)** — Singly, Circular, and Doubly Linked List implementation, traversal, insertion, deletion, reversing (iterative and recursive), and Spotify clone simulation (SLL, CLL, DCLL)
 * **[Searching/](Searching/)** — Linear Search (iterative and pointer-based) and Binary Search (iterative and recursive)
 * **[Sorting/](Sorting/)** — Bubble Sort, Modified Bubble Sort, Selection Sort, Modified Selection Sort, Insertion Sort, Merge Sort, and Quick Sort
 * **[Stack/](Stack/)** — Stack implementation and operations
 * **[Queue/](Queue/)** — Queue implementation and operations
+* **[Tree/](Tree/)** — Binary Search Tree (BST) node insertion, searching, finding min and max elements, and traversals (Inorder, Preorder, Postorder)
 * **[Recursion/](Recursion/)** — Recursion vs. Iteration (Factorial)
 * **[Basics/](Basics/)** — Pattern printing, nested loops, pointer basics, and data structure classification
 * **[Practice Questions/](Practice%20Questions/)** — Mid-sem questions, case-based problems, and lab assignments
@@ -30,6 +31,8 @@ So far, I have covered:
 * Array Traversal Using Pointers
 * Binary Search — Iterative
 * Binary Search — Recursive
+* Binary Search Tree (BST) — Node Insertion, Searching, Min & Max Elements
+* Binary Search Tree Traversals — Inorder, Preorder, Postorder
 * Bubble Sort
 * Circular Linked List — Implementation, Insertion, Deletion
 * Data Structure Identification
@@ -50,7 +53,7 @@ So far, I have covered:
 * Quick Sort
 * Recursion vs. Iteration — Factorial
 * Selection Sort
-* Singly Linked List — Implementation, Insertion, Deletion, Reversing
+* Singly Linked List — Implementation, Insertion, Deletion, Reversing (Iterative and Recursive)
 * Spotify Clone — Interactive Playlist using SLL, CLL, and DCLL
 * Stack
 
@@ -60,7 +63,6 @@ Many more topics will be added to this repository as the semester progresses.
 
 Future topics will mainly include:
 
-* Trees
 * Graphs
 
 This repository will be updated regularly as I learn and complete more topics.
