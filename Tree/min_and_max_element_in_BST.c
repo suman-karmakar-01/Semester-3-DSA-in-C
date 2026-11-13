@@ -55,4 +55,5 @@ int main(){
     root = insert(root, 12);
     printf("Min value : %d\n", min(root));
     printf("Max value : %d", max(root));
+    return 0;
 }
