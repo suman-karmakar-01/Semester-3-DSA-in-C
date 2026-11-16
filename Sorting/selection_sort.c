@@ -1,21 +1,21 @@
 #include<stdio.h>
 
-void selectionSort(int arr[], int size){
-    for(int i=0; i<size-1; i++){
-        for(int j=0; j<size; j++){
-            printf("%d", arr[j]);
-            if(j<size-1){
-                printf(", ");
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int min_idx = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[min_idx]) {
+                min_idx = j;
             }
         }
-        printf("\n");
-    	int min_index = i;
-        for(int j=i+1; j<size; j++){
-            if(arr[min_index]>arr[j]){
-                int temp = arr[j];
-                arr[j] = arr[min_index];
-                arr[min_index] = temp;
-            }
+        if (min_idx != i) {
+            swap(&arr[i], &arr[min_idx]);
         }
     }
 }
